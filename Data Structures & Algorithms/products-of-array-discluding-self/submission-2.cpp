@@ -14,6 +14,7 @@ public:
         //O(n^2) because outer for loop needed for total number of elements in array
         //inner loop needed to calc the product for each output element
 
+        //this approach just uses product and divides by nums[i] and pushes back with some zero checks for specific cases
         int product = 1;
         int zeroCount = 0;
         for(const auto& num : nums){
